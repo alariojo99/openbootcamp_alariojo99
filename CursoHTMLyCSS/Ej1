@@ -1,1 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio de Introducción a HTML en OpenBootcamp</title>
+</head>
+<body>
+    <!-- Este es mi primer comentario de dos líneas
+    Aprendiendo a documentar mi código con OpenBootcamp-->
 
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=h4NJCc4AQxw&t=461s&ab_channel=AlecHern%C3%A1ndez" target="_blank">Rewind Hispano 2020</a></li>
+        <li><a href="https://www.youtube.com/watch?v=_FMplFlIiOU&t=549s&ab_channel=AlecHern%C3%A1ndez" target="_blank">Rewind Hispano 2021</a></li>
+        <li><a href="https://www.youtube.com/watch?v=IbAuuxBFwoo&t=2s&ab_channel=AlecHern%C3%A1ndez" target="_blank">Rewind Hispano 2022</a></li>
+    </ul>
+
+</body>
+</html>
