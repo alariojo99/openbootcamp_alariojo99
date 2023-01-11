@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    background-color: #161717;
+    color: white;
+}
+
+.container{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container h3{
+    font-weight: bold;
+    margin: 10px 0px;
+}
+
+.container .register-btns picture{
+    background-color: white;
+    border-radius: 5px;
+    padding: 2px 5px;
+    color: black;
+    margin: 10px 0px;
+
+}
+
+.container .register-btns #google-btn{
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0px;
+
+}
+
+.container .register-btns #twitter-btn{
+    background-color: #3d3d3d1a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0px;
+}
+
+.separator{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+    margin: 10px 0px;
+}
+
+.separator span{
+    color: white;
+}
+
+.separator hr{
+    flex-grow: 1;
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.564);
+}
+
+.container form label input{
+    padding: 0px 10px;
+    background-color: #212121;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    width: fit-content;
+    margin: 10px 0px;
+    color: white;
+}
+
+.container form .name-username{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.container form .email input{
+    width: 100%;
+}
+
+.container form .password input{
+    width: 100%;
+}
+
+.container form .checkbox{
+    margin: 10px 0px;
+}
+
+.container form .enviar input{
+    margin: 10px 0px;
+    width: 100%;
+    background-color: #fc24d1;
+    color: white;
+    border: none;
+    padding: 10px 0px;
+    border-radius: 10px;
+}
+
+.container form label input:focus{
+    outline: none;
+    background-color: #ff00cc20;
+    transition: 0.2s;
+}
+
+.container form label input:hover{
+    outline: none;
+    background-color: #454045;
+    box-shadow: 0 0 4px #fc24d1;
+    transition: 0.2s;
+}
+
+button:hover{
+    opacity: 0.7;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.container form .enviar input:hover{
+    opacity: 0.7;
+    cursor: pointer;
+    transition: 0.3s;
+}
