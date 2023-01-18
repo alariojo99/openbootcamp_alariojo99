@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+}
+
+.secondary{
+    display: flex;
+    flex-direction: column;
+}
+
+.secondary .item{
+    background-color: red;
+    color: white;
+    padding: 1rem;
+}
+
+.principal{
+    background-color:blue;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+.principal .item{
+    background-color: blue;
+    color: white;
+    padding: 1rem;
+}
+
+@media (max-width: 640px){
+    body{
+        flex-direction: column-reverse;
+
+    }
+    .secondary{
+        flex-direction: row;
+    }
+}
