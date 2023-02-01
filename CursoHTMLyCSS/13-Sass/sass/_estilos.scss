@@ -1,0 +1,32 @@
+
+$title-color: red;
+$backround-lists: cyan;
+
+
+body{
+    @include centrar-div;
+}
+
+h1{
+    color:$title-color;
+}
+
+.parrafo{
+   
+    ul{
+        background-color: grey;
+        li{
+            color: orange;
+        }
+    }
+}
+
+ul{
+    background-color: $backround-lists;
+}
+
+.botones{
+    padding: 2rem;
+    background-color: rgba(128, 128, 128, 0.116);
+    @include centrar-div;
+}
