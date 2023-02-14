@@ -1,7 +1,7 @@
 const listaCompra = ["manzana", "pera", "pomelo", "plátano", "melón"]
 
 listaCompra.push("aceite de girasol")
-listaCompra.pop("aceite de girasol")
+listaCompra.pop()
 
 console.log(listaCompra)
 
@@ -34,8 +34,18 @@ console.log(directores)
 const titulos = peliculas.map(obj => obj.titulo)
 console.log(titulos)
 
+/* De primeras hice esto para concatenar, pero se referían a hacerlo como he puesto abajo
+
 const directoresTitulos = directores.map((obj, i)=>{
     return `${obj} -> ${titulos[i]}`
 })
 
-console.log(directoresTitulos)
+console.log(directoresTitulos)*/
+
+//Una nueva lista que concatene la lista de directores y la lista de los títulos (utilizando concat)
+const directores_titulos = directores.concat(titulos)
+console.log(directores_titulos)
+
+// Una nueva lista que concatene la lista de directores y la lista de los títulos (utilizando el factor de propagación)
+const directores_titulos_prop = [...directores, ...titulos]
+console.log(directores_titulos_prop)
