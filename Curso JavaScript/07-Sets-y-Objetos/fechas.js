@@ -1,46 +1,14 @@
-//Trabajando con fechas
+const hoy = new Date()
 
-////Maneras de inicializar fechas:
+const nacimiento = new Date(1999, 5, 17)
 
-    const fecha = new Date() //la fecha de AHORA
+const comparacion = hoy > nacimiento
+console.log('comparacion :>> ', comparacion);
 
-    //Los meses inicializan en 0 
-    const fecha2 = new Date(1999, 5, 17)
+const dia = nacimiento.getDate()
+const mes = nacimiento.getMonth() + 1
+const anyo = nacimiento.getFullYear()
 
-    //Estan formateadas en ms, el inicio es 1/1/1979, si le paso 0 milisegundos me dará la fecha origen
-    const fecha3 = new Date(0)
-
-    //Strings
-    const fecha4 = new Date("June 17, 1999 12:15:35")
-
-console.log('fecha :>> ', fecha);
-console.log('fecha2 :>> ', fecha2);
-console.log('fecha3 :>> ', fecha3);
-console.log('fecha4 :>> ', fecha4);
-
-////Comparación de fechas
-console.log(fecha > fecha2) //true
-
-const fecha5 = new Date(1999, 5, 17)
-
-console.log(fecha2 === fecha5) //false --> ERROR no se puede comprarar así, se tiene que pasar a ms
-
-    //Para convertir a ms:
-    console.log(fecha2.getTime() === fecha5.getTime()) //true
-
-////Obtener el dia, mes y año de una fecha
-    
-    //Obtener el DIA
-    console.log(fecha2.getDate())
-
-    //Obtener el MES
-    console.log(fecha2.getMonth() + 1)
-
-    //Obtener el añño
-    console.log(fecha2.getFullYear())
-
-////Mostrar fecha en un STRING .toLocaleDateString
-
-console.log(fecha2.toLocaleDateString("en-GB"))
-console.log(fecha2.toLocaleDateString("en-US"))
-
+console.log('dia :>> ', dia);
+console.log('mes :>> ', mes);
+console.log('anyo :>> ', anyo);
