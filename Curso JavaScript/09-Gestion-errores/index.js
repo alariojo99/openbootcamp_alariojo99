@@ -1,4 +1,16 @@
 
+const winston = require('winston');
+
+const logger = winston.createLogger({
+  level: 'error',
+  format: winston.format.json(),
+  defaultMeta: { service: 'user-service' },
+  transports: [
+    new winston.transports.File({ filename: 'error.log' }),
+  ],
+});
+
+
 const suma = (a,b) => {
     if (typeof a === 'number' && typeof b === 'number'){
         return a+b
@@ -10,5 +22,5 @@ const suma = (a,b) => {
 try{
     console.log(suma("a", 5))
 }catch(e){
-    console.log(e);
+    logger.log("error", e.toString())
 }
